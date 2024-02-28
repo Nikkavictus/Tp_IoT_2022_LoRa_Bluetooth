@@ -6,6 +6,7 @@ Dans le cadre de la mise en place d'un système de communication combinant l'uti
 La première carte ESP32 agit comme un recepteur LoRa tout en étant éditeur d'un broker MQTT. Elle commence par se connecter à un réseau WiFi, ce qui lui permet de communiquer avec le broker MQTT. Une fois connectée, la carte publie régulièrement, toutes les 5 secondes, les paramètres de communication LoRa sur le broker MQTT. En parrallèle, la carte est en écoute LoRa afin d'afficher les messages recu. 
 ### Carte 2 : L'Émetteur LoRa et Client MQTT
 La seconde carte agit comme un émetteur LoRa tout en étant client d'un broker MQTT. Elle commence par se connecter à un réseau WiFi, ce qui lui permet de communiquer avec le broker MQTT à l'adresse 10.3.141.205 sur le topic srt5/SUPERMAX. Une fois connectée, la carte recoie régulièrement, toutes les 5 secondes, les paramètres de communication LoRa sur le broker MQTT. Ces paramètres incluent des informations  nécessaires à la communication LoRa : Frequeny, Spreading Factor et Bandwith. Si les paramètres de connexion sont différents des derniers utilisés alors on reconfigure nos paramètres LoRa puis on initialise la connexion et on continue d'envoyer "Bonjour LoRa" en boucle toutes les 5 secondes. 
+![image](https://github.com/Nikkavictus/Tp_IoT_2022_LoRa_Bluetooth/assets/150132808/2c927f57-6744-4011-9ef1-d955be5a4c94)
 
 ## Bibliotèques utilisés
 ### Wifi.h
