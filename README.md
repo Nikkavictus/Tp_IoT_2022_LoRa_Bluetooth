@@ -16,7 +16,7 @@ Ces bibliothèques me permettent d'intégrer les fonctionnalités du protocole M
 Enfin, la bibliothèque LoRa permet d'établir une communication à longue portée et faible consommation entre nos ESP32 en utilisant le protocole LoRa.
 
 ## SenderMQTT_ReceiverLoRa
-### Fonctions (Les différentes fonctions sont connéctés dans le code) : 
+### Fonctions (Les différentes fonctions sont commentés dans le code) : 
 #### void setup() : Configure les communications série, SPI, LoRa, se connecte au réseau WiFi et au serveur MQTT au démarrage du dispositif.
 #### void loop() : Vérifie les paquets LoRa reçus et publie les messages sur le serveur MQTT à intervalles réguliers.
 #### void connectToWiFi() : Établit la connexion WiFi avec les identifiants fournis.
